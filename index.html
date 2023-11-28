@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,73 +8,138 @@
   <!-- Link to the external CSS file -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-
-  <header>
-    <h1>David Davis - Software Developer</h1>
-  </header>
-
-
-  <section class="project-container">
-    <section class="project-box left">
-      <h2>RNN Text Classification</h2>
-      <p>A Recurrant neural network hosted on flask, built in TensorFlow. The web application has the ability to perform sentiment anaylsis on user input,
-         or for the user to enter a youtube url and peform the anaylsis on comments. This was the third year project at Toi Ohomai.  </p>
-      <a href="https://github.com/ImitableLine/Sentiment-Anal-Flask" target="_blank">
-        <img src="images/github-mark.png" alt="GitHub Repository">
-      </a>
-    </section>
-
-    <section class="project-box left">
-      <h2>MERN Stack SCP Redesign</h2>
-      <p>This MongoDB Express React and Node web application aims to provide a small redesign to the SCP creepy-pasta website. It uses all basic HTTP operations.
-        This website was made as a school project in my last year.
-      </p>
-      <a href="https://github.com/ImitableLine/SCPAPP" target="_blank">
-        <img src="images/github-mark.png" alt="GitHub Repository">
-      </a>
-    </section>
-
-    <section class="project-box right">
-      <h2>C++ Calculator</h2>
-      <p>A basic calulator built with C++ and Qt. It has a basic design with memory abilities attached. 
-        This application provides essential arithmetic operations and incorporates a memory function for user convenience.</p>
-      <a href="https://github.com/ImitableLine/CPP-Calculator" target="_blank">
-        <img src="images/github-mark.png" alt="GitHub Repository">
-      </a>
-    </section>
-
-    <section class="project-box right">
-      <h2>C++ NotePad</h2>
-      <p>A C++ Qt Notepad application designed to offer a versatile text editor With undo, redo, save, open, and new functions, this application ensures efficient and user-friendly document management.</p>
-      <a href="https://github.com/ImitableLine/Notepad-Application" target="_blank">
-        <img src="images/github-mark.png" alt="GitHub Repository">
-      </a>
-    </section>
+<section id="projects" class="scroll-section">
+    <div id="wrapper">
+      <header id="header">
+        <div id="logo">David Davis</div>
+        <nav id="nav">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
   </section>
+
+      <section class="project-container">
+
+        <!-- RNN Text Classification Project -->
+        <section class="project-box left">
+          <h2>RNN Text Classification</h2>
+          <p>This project is a Flask application hosting a Recurrent Neural Network (RNN) implemented with TensorFlow.
+             Its main functionality lies in sentiment analysis, allowing users to input text for classification.
+              What sets it apart is the capability to analyze sentiments in bulk from YouTube comments using the YouTube API.
+               Developed as my third-year project at Toi Ohomai, this straightforward yet effective solution showcases practical skills in machine learning and web development,
+                making it a noteworthy addition to my portfolio.</p>
+          <ul>
+            <li>Sentiment analysis using a recurrent neural network</li>
+            <li>Flask web application utilizing a simple API GET request</li>
+            <li>Mass youtube comment analysis</li>
+            <li>Technologies: Flask, Python, TensorFlow, HTML/CSS</li>
+          </ul>
+          <a href="https://github.com/ImitableLine/Sentiment-Anal-Flask" target="_blank"><img src="images/github-mark.png" alt="GitHub Repository"></a>
+        </section>
   
-    <div class="education-div">
-        <section class="education-box">
-            <h2>Education</h2>
-            <p class="degree">Bachelor of Applied Information Technology</p>
-            <div class="details">
-                <div class="detail">
-                    <h3>School</h3>
-                    <p>Toi Ohomai Institute</p>
-                </div>
-                <div class="detail">
-                    <h3>Timeline</h3>
-                    <p>Feb '19 - Nov '23</p>
+        <!-- MERN Stack SCP Redesign Project -->
+        <section class="project-box left">
+          <h2>MERN Stack SCP Redesign</h2>
+          <p>This project is a web application built with MongoDB, Express, React, and Node (MERN stack).
+             Its primary objective is to offer a modest redesign to the SCP creepy-pasta website, implementing fundamental HTTP operations.
+              Created as a school project during my final year, this undertaking highlights my proficiency in full-stack web development.
+               Despite its simplicity, this project does demonstrates my ability to leverage key technologies to enhance the user interface and functionality of a website.
+                It serves as a tangible example of my practical skills in MERN stack development gained through hands-on experience during my academic tenure.</p>
+          <ul>
+            <li>Simplistic but modern re-design</li>
+            <li>GET, POST, PUT, DELETE operations</li>
+            <li>Technologies: MongoDB, Express, React, Node, HTML/CSS, JavaScript</li>
+          </ul>
+          <a href="https://github.com/ImitableLine/SCPAPP" target="_blank"><img src="images/github-mark.png" alt="GitHub Repository"></a>
+  
+        </section>
+  
+        <!-- C++ Calculator Project -->
+        <section class="project-box right">
+          <h2>C++ Calculator</h2>
+          <p>This project is a basic calculator crafted using C++ and Qt.
+             Featuring a straightforward design, the calculator comes equipped with memory functionalities for user convenience.
+              It focuses on providing essential arithmetic operations, showcasing the simplicity and efficiency of a well-designed calculator application.
+               The incorporation of memory functions adds a layer of usability, enhancing the overall user experience.
+                This project demonstrates my ability to create practical and user-friendly software solutions.</p>
+          <ul>
+            <li>Modern design principles</li>
+            <li>Arithmetic operations</li>
+            <li>Memory functions</li>
+            <li>Technologies: Qt, C++</li>
+          </ul>
+          <a href="https://github.com/ImitableLine/CPP-Calculator" target="_blank"><img src="images/github-mark.png" alt="GitHub Repository"></a>
+  
+        </section>
+  
+        <!-- C++ NotePad Project -->
+        <section class="project-box right">
+          <h2>C++ NotePad</h2>
+          <p>This project is a C++ Qt Notepad application designed to provide users with a versatile text editor.
+             Packed with essential features such as undo, redo, save, open, and new functions, the application ensures efficient and user-friendly document management.
+              The focus on functionality and ease of use makes this notepad a reliable tool for various text editing needs.
+             Created with C++ and Qt, the project demonstrates my proficiency in developing practical and intuitive software solutions.</p>
+          <ul>
+            <li>Intuitive design principles</li>
+            <li>Versatile text editor packed with functionality</li>
+            <li>New, redo, save, open, undo functions</li>
+            <li>Technologies: Qt, C++</li>
+          </ul>
+          <a href="https://github.com/ImitableLine/Notepad-Application" target="_blank"><img src="images/github-mark.png" alt="GitHub Repository"></a>
+        </section>
+  
+      </section>
+    
+
+    <section id="about" class="scroll-section">
+      <section id="about">
+        <h2>About Me</h2>
+    
+        <div class="about-content">
+            <!-- Education Section -->
+            <div class="education-box">
+                <h3>Education</h3>
+                <p class="degree">Bachelor of Applied Information Technology</p>
+                <div class="details">
+                    <div class="detail">
+                        <h4>School</h4>
+                        <p>Toi Ohomai Institute of Technology</p>
+                    </div>
+                    <div class="detail">
+                        <h4>Timeline</h4>
+                        <p>Feb '19 - Nov '23</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
+    
+            <!-- Bio Section -->
+            <div class="bio-box">
+                <h3>Small Summary</h3>
+                <p>I am a passionate software developer with a focus on creating innovative solutions and enhancing user experiences.
+                   My journey in the field of information technology began at Toi Ohomai Institute, where I pursued a Bachelor's degree in Applied Information Technology.
+                    During my time at Toi Ohomai, I created several C# GUI applications and more than a dozen models in TensorFlow.
+                     I also studied client-server web development and much more.
+                      My skills are mostly related to C# and .Net, but I have dabbled in C++, Python, and several web technologies like React, JavaScript, and the full MERN stack.</p>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    
 
 
-  
-  <footer>
-    <p>Contact Information | jsdatjsd@gmail.com | 027-416-5779</p>
-  </footer>
+   <section id="contact" class="scroll-section">
+      <footer>
+        <p>Contact Information | jsdatjsd@gmail.com | 027 - 416 - 5779</p> <a href="https://www.linkedin.com/in/david-davis-1640331ab/">LinkedIn</a>
+      </footer>
+    </section>
+    
+  </div>
 
 </body>
+
 </html>
